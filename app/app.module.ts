@@ -9,7 +9,6 @@ import { SharedComponentsModule } from './shared-components';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartViewComponent } from './views/start/start.component';
-
 @NgModule({
   imports:[
     BrowserModule,
