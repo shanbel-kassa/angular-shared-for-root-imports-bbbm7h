@@ -1,0 +1,13 @@
+<h3>Tags</h3>
+<ul>
+  <li
+    *ngFor="let tag of tags$ | async"
+  >
+    {{tag}}
+
+    <button type="button" (click)="removeTag(tag)">x</button>
+  </li>
+</ul>
+
+<input type="text" #newTag placeholder="enter new tag name"  />
+<button type="button" (click)="addTag(newTag.value); newTag.value=''">Add Tag</button>
